@@ -1,8 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
-.ourStory-title{
+/* .ourStory-title{
     font-family: 'Electrolize', sans-serif;
     text-shadow: -2px -2px 0 #ec5d24, 2px -2px 0 #ec5d24, -2px 2px 0 #ec5d24, 2px 2px 0 #ec5d24;
     font-size: 5vw;
     margin-bottom: -100px;
-}
+} */
+.about-us-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .about-us-title {
+    margin-top: 50px;
+  }
+  
+  .about-us-subtitle {
+    margin-top: 50px;
+    margin-bottom: -20px;
+  }
+  
+  .about-us-content {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+  
+  .image-description-container {
+    background: black;
+    border-radius: 40px;
+    border: 10px solid #ec5d24;
+  }
+  
+  .about-us-image {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-us-description {
+    font-size: 28px;
+  }
+  

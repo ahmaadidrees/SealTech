@@ -37,8 +37,8 @@ const LinePainting = () => {
           <h1 style={{marginTop:"100px", marginBottom:'50px'}} className="text-center sealcoat-title">Line Painting</h1>
         </Col>
       </Row>
-      <Row style={{marginBottom: "100px"}}>
-        <Col xs={12} md={7}>
+      <Row style={{margin:'100px'}}>
+        <Col xs={12} md={7} >
           <Image style={{borderRadius:'40px',border: "5px solid #ec5d24", marginBottom:"20px"}} src={selectedImage} alt="Image" fluid />
           
         <p className="linepage-text">At Shield Seal we provide best in class line painting services to every kind of property owner, whether you're a small daycare or a large office park your satisfaction is our #1 priority.Whether it's a damaged lot or a newly constructed site, our team of experienced painters will provide a customized solution to meet your needs.</p>

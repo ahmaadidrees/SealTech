@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+
 .blog-title {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-family: 'Electrolize', sans-serif;
+    text-shadow: -2px -2px 0 #ec5d24, 2px -2px 0 #ec5d24, -2px 2px 0 #ec5d24, 2px 2px 0 #ec5d24;
+    font-size: 120px;
   }
   
   .blog-row {
@@ -10,10 +16,30 @@
     justify-content: center;
     margin-top: 20px;
   }
+  .card-body {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    outline: none !important;
+    transition: box-shadow 0.3s; /* Added transition property */
+    border: none !important;
+    border-width: 0 !important;
+  }
+  .card{
+    border-width: 0px !important;
+  }
+  .card-body:focus,
+  .card-body:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
+    outline: none !important; /* Remove outline on focus */
+  }
   
   .blog-card {
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
+    outline: none !important;
+    min-height: 500px;
+
+    /* margin-left: -100px;
+    margin-right: -100px; */
   }
   
   .blog-image {
@@ -25,4 +51,9 @@
     font-style: italic;
     color: #888;
   }
-  
+  @media(min-width:1200px){
+  .blog-container{
+    padding-left: 120px !important;
+    padding-right: 120px !important;
+  }
+  }

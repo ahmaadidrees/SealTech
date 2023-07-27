@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/Images/tool6.png','/Images/tool5.png','/Images/tool4.png','/Images/tool3.png','/Images/tool2.png','/Images/tool1.png','/Images/sealcoat.jpeg', '/Images/LinePainting.jpeg', '/Images/crackfilling.jpeg'];
+  const images = ['/Images/tool6.jpeg','/Images/tool5.jpeg','/Images/tool3.jpeg','/Images/tool2.jpeg','/Images/tool1.jpeg','/Images/sealcoat.jpeg', '/Images/LinePainting.jpeg', '/Images/crackfilling.jpeg'];
 
 
   useEffect(() => {

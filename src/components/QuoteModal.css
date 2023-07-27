@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+.modal-title{
+    font-family: 'Electrolize', sans-serif;
+    font-weight: bolder;
+  text-shadow: -2px -2px 0 #ec5d24, 2px -2px 0 #ec5d24, -2px 2px 0 #ec5d24, 2px 2px 0 #ec5d24;
+}
+.modal-content {
+  width: 95% !important;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90%;
+  overflow-y: scroll;
+  border:10px solid black;
+  box-shadow: 0 0 0 10px #ec5d24;
+}
+.modal-close{
+    background-color: #ec5d24 !important;
+    color: black !important;
+    border-color: #ec5d24 !important;
+    position: absolute;
+    right:15px;
+}
+.modal-close:hover{
+    background-color: black !important;
+    color:#ec5d24 !important;
+    border-color: black !important;
+}
+@media(min-width:1000px){
+    .modal-content{
+        width:1000px !important;
+        left: 50%;
+        transform: translateX(-50%);
+       
+    }
+    .modal-title{
+        font-size: 100px;
+    }
+}
+
+
+.modal-footer {
+  height: 40px;
+}
+
+.btn-close {
+  color: black !important;
+  font-weight: bolder;
+}
+
+.header-image {
+  text-align: center;
+  margin-bottom: -30px;
+  margin-top: -40px;
+}
+
+.form-container {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.477);
+
+
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 40px;
+}
+.form-control{
+    border-radius: 40px;
+    border-color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+.modal-btn{
+    width:100%;
+    background-color: #ec5d24 !important;
+    border-color: #ec5d24 !important;
+    color:black !important;
+    font-weight: bolder !important;
+}
+.modal-btn:hover{
+    background-color: black !important;
+    color: #ec5d24 !important;
+    border-color: black !important;
+}
+/* 
+@media (max-width: 750px) {
+  .modal-content {
+    width: 100% !important;
+    left: 0;
+  }
+} */

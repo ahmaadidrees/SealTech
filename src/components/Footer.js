@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function Footer({isHome}) {
   return (
     <footer className='foot' style={{background: 'black', color: 'white', paddingBottom: '0px', overflowX:'hidden', overflow:'hidden', paddingTop: '30px', marginTop: isHome && -280}}>
-       <div style={{background:"#ec5d24", position:"relative", top:-30,right:1200, width: "10000%", height:"20px", overflowX:'hidden'}}></div>
+       <div style={{background:"#ec5d24", position:"relative", top:-30,right:1200, width: "10000%", height:"5px", overflowX:'hidden'}}></div>
       <Container className='footer-container'>
         <Row>
           <Col sm={12} md={3} className="mb-4" style={{textAlign:'center'}}>
@@ -32,8 +32,8 @@ function Footer({isHome}) {
           </Col>
           <Col sm={12} md={3} className="mb-4">
             <h4 className="text-yellow text-center">Hours of Operation</h4>
-            <ul className="list-unstyled mt-3 " style={{whiteSpace:'nowrap',textAlign:'center' }}>
-              <li >Mon: 7:00 AM - 8:00 PM</li>
+            <ul className="list-unstyled mt-3 hours " style={{whiteSpace:'nowrap',textAlign:'center', color:"white" }}>
+              <li  >Mon: 7:00 AM - 8:00 PM</li>
               <li >Tue: 7:00 AM - 8:00 PM</li>
               <li >Wed: 7:00 AM - 8:00 PM</li>
               <li >Thu: 7:00 AM - 8:00 PM</li>
@@ -59,7 +59,7 @@ function Footer({isHome}) {
         </Row>
         
       </Container>
-      <div style={{background:"#ec5d24", position:"relative", bottom:0,right:1200, width: "10000%", height:"20px", overflowX:'hidden'}}></div>
+      <div style={{background:"#ec5d24", position:"relative", bottom:0,right:1200, width: "10000%", height:"5px", overflowX:'hidden'}}></div>
     </footer>
   );
 }

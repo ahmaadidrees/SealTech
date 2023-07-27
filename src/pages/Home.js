@@ -15,7 +15,7 @@ const Home = () => {
   ];
   return (
     <div>
-       <Navbarr isHomePage={true} />
+       <Navbarr isHomePage={true} isHome={isHome} />
       <HeroSection />
       <Services />
       <Slideshow />

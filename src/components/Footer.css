@@ -29,7 +29,7 @@
     color:white;
   }
 
-.footer-links{
+.footer-links,.hours{
   font-size: 20px;
 }
 
@@ -38,11 +38,12 @@
   .text-orange:hover {
     color: #ec5d24;
   }
+  
   @media(max-width:1199px) {
     .text-yellow{
       font-size: 25px;
     }
-    .footer-links{
+    .footer-links,.hours{
       font-size: 18px;
     }
   }
@@ -50,7 +51,7 @@
     .text-yellow{
       font-size: 20px;
     }
-    .footer-links{
+    .footer-links,.hours{
       font-size: 15px;
     }
   }
@@ -58,7 +59,7 @@
     .text-yellow{
       font-size: 30px;
     }
-    .footer-links{
+    .footer-links,.hours{
       font-size: 25px;
     }
   }
@@ -66,7 +67,7 @@
     .text-yellow{
       font-size: 8vw;
     }
-    .footer-links{
+    .footer-links,.hours{
       font-size: 6vw;
     }
   }

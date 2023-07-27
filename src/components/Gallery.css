@@ -1,0 +1,37 @@
+.gallery {
+    margin: 2rem;
+  }
+  
+  .gallery-header {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery-header h1 {
+    color: white;
+  }
+  
+  .gallery-grid {
+    /* Remove these styles as we are using Bootstrap's grid system */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  }
+  
+  .gallery-item {
+    /* Remove these styles as we are using Bootstrap's grid system */
+    /* flex: 0 0 calc(25% - 1em);
+    margin: .5em;
+    border: 5px solid #ec5d24; /* Orange border */
+  }
+  
+  /* Remove this style as well, we'll set the width in the Bootstrap grid */
+  /* .gallery-item img {
+    width: 100%;
+    height: auto;
+  } */
+  

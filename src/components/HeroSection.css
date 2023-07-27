@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
 
 /* Set the height of the hero section */
 .hero-section {
@@ -110,8 +111,8 @@
     text-align: center;
     margin-top: 120px; /* added margin-top */
     margin-bottom: -10px; /* added margin-bottom */
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: bolder;     }
+    font-family: 'Stardos Stencil', cursive;
+    font-weight:900 ;     }
   
   
 
@@ -119,7 +120,7 @@
   .hero-content {
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

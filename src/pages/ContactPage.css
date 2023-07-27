@@ -1,0 +1,6 @@
+.map{
+    margin-top: 250px;
+}
+@media(max-width:991px){
+    .map{margin-top: 777px;}
+}

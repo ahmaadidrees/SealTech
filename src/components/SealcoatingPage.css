@@ -50,10 +50,13 @@
 
 .sealcoat-container {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #f5f5f5;
+  margin-top: 100px;
 }
 
 .sealpage-text {
   margin-bottom: 20px;
+  font-size: 22px;
 }
 
 .image-row .col-xs-4 {
@@ -67,4 +70,14 @@
 .selected-image img {
   border: 5px solid #ec5d24;
 }
-
+@media(min-width:1400px){
+.sealcontent{
+  margin-left: 200px !important;
+  margin-right: 200px !important;
+}}
+@media(min-width:992px) and (max-width: 1399px){
+.sealcontent{
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+}
+}

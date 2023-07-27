@@ -50,6 +50,8 @@
 
 .sealcoat-container {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-left: 100px !important;
+  margin-right: 100px !important;
 }
 
 .sealpage-text {
@@ -68,3 +70,7 @@
   border: 5px solid #ec5d24;
 }
 
+.seal-content{
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+}

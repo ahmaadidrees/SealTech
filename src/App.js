@@ -9,6 +9,8 @@ import ContactPage from './pages/ContactPage';
 import OurStoryPage from './pages/OurStoryPage';
 import WhySealTechPage from './pages/WhySealTechPage';
 import BlogPage from './pages/BlogPage';
+import ArticlePage from './pages/ArticlePage';
+import GalleryPage from './pages/GalleryPage';
 
 
 // function ScrollToTop() {
@@ -34,6 +36,8 @@ function App() {
           <Route path = "/our-story" element={<OurStoryPage/>} />
           <Route path = "/why-sealtech" element={<WhySealTechPage/>} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/article" element={ <ArticlePage />} />
+          <Route path= "/gallery" element= {<GalleryPage/>} />
 
 
         </Routes>

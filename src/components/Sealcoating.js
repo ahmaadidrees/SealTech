@@ -37,7 +37,7 @@ const Sealcoating = () => {
           <h1 style={{marginTop:"100px", marginBottom:'50px'}} className="text-center sealcoat-title">Sealcoating</h1>
         </Col>
       </Row>
-      <Row style={{marginBottom: "100px"}}>
+      <Row className='sealcontent' style={{marginBottom: "100px"}}>
         <Col xs={12} md={7}>
           <Image style={{borderRadius:'40px',border: "5px solid #ec5d24", marginBottom:"20px"}} src={selectedImage} alt="Image" fluid />
           <p className="sealpage-text">Sealcoating is the application of a polymer based coating to asphalt pavement, to help shield it from the damaging effects of rain, high-weight vehicles, and other harmful elements such as oil and gas spills. This coating also safeguards the pavement against future cracks and potholes, preventing costly repairs. Research shows if asphalt is sealcoated every 2-3 years, it is 90% less likely to crack than an unsealed surface.</p>
@@ -45,25 +45,12 @@ const Sealcoating = () => {
           <p className="sealpage-text">At Shield Seal, we provide sealcoating solutions for all types of asphalt, from residential driveways to high-traffic commercial parking lots. Our skilled technicians use the most durable sealers on the market, and cutting-edge equipment to ensure your asphalt stays in excellent condition for years to come!</p>     
         </Col>
         <Col xs={12} md={5}>
+          
           <Row>
             <Col>
-              <Button style={{width:"100%", marginBottom: "10px",borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} >Sealcoating</Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Button style={{width:"100%", marginBottom: "10px",borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} >Crack Filling</Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Button style={{width:"100%", marginBottom: "10px",borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} >Line Painting</Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Form onSubmit={handleSubmit}>
-                <h2 style={{marginTop:"50px", marginBottom:'50px'}} className="text-center sealcoat-subtitle">Contact Us Today</h2>
+            <Form style={{ background: '#e5e5e5', borderRadius: '20px', padding: '10px', border: '10px solid #ec5d24', boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)' }} onSubmit={handleSubmit}>
+
+                <h2 style={{ marginBottom:'50px'}} className="text-center sealcoat-subtitle">Contact Us Today</h2>
                 <Form.Group className="mb-3" controlId="formName">
                   <Form.Control
                     type="text"
@@ -118,7 +105,7 @@ const Sealcoating = () => {
                   />
                 </Form.Group>
 
-                <Button style={{borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} className='contact-btn'  type="submit">
+                <Button style={{borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24", marginBottom:50}} className='contact-btn'  type="submit">
                   Submit
                 </Button>
               </Form>
@@ -126,6 +113,22 @@ const Sealcoating = () => {
           </Row>
           <Row>
             <Col>
+            <h2 style={{ marginBottom:20, marginTop:50}} className="text-center sealcoat-subtitle">Quick Links</h2>
+            <Row>
+            <Col>
+              <Button style={{width:"100%", marginBottom: "10px",borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} >Sealcoating</Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button style={{width:"100%", marginBottom: "10px",borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} >Crack Filling</Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button style={{width:"100%", marginBottom: "10px",borderRadius:'40px', background:"#ec5d24", borderColor:"#ec5d24"}} >Line Painting</Button>
+            </Col>
+          </Row>
               <Row style={{marginTop:"20px", height: "100%"}}>
                 <Col xs={4}>
                   <Image

@@ -76,17 +76,22 @@ const ReviewPage = () => {
     }
   };
 
+  
   const toggleExpandReview = (reviewId) => {
-    if (expandedReviewIds.includes(reviewId)) {
-      setExpandedReviewIds(expandedReviewIds.filter((id) => id !== reviewId));
-    } else {
-      setExpandedReviewIds([...expandedReviewIds, reviewId]);
-    }
+    setExpandedReviewIds((prevExpandedReviewIds) => {
+      if (prevExpandedReviewIds.includes(reviewId)) {
+        return prevExpandedReviewIds.filter((id) => id !== reviewId);
+      } else {
+        return [...prevExpandedReviewIds, reviewId];
+      }
+    });
   };
+  
+  
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1285);
     };
 
     checkMobile();
@@ -97,35 +102,42 @@ const ReviewPage = () => {
   }, []);
 
   return (
-    <Container className='review-container' style={{ marginBottom: '80px', position: 'relative', bottom: 200, marginTop: '0px', paddingTop: 100, paddingBottom: 100, paddingRight: 60, paddingLeft: 60 }}>
+    <div>
+    
+    <Container className='review-container' style={{ marginBottom: '80px', position: 'relative', bottom: 200, marginTop: '0px', padding:100,zIndex:199, overflow:'hidden'}}>
+      <div>
       <center>
-        <h1 style={{ marginBottom: 30, fontWeight: 'bolder' }}>What Clients Say About Us</h1>
-      </center>
+        <h1 className='review-title' style={{ marginBottom: 50, fontWeight: 'bolder' }}>What Clients Say About Us</h1>
+      </center></div>
+      {startIndex > 0 &&
+      <FaArrowLeft style={{position: "absolute", left: 20, bottom: !isMobile ? "45%" : '20%', }} size={40} onClick={handlePrev} />}
+     { endIndex < reviews.length - 1 && <FaArrowRight style={{position: "absolute", right: 20, bottom: !isMobile ? "45%": '20%'}} size = {40} onClick = {handleNext} />}
       <Row className={isMobile ? 'review-row-mobile' : 'review-row'}>
         {reviews.slice(startIndex, endIndex + 1).map((review) => (
-          <Col md={4} key={review.id}>
-            <Card className='review-card'>
-              <Card.Body>
+          <Col className='cardss' md={4} key={review.id}>
+            <Card  className='review-card'>
+              <Card.Body style={{minHeight:210}}>
                 <Card.Title>
                   <Avatar
                     name={review.name}
                     round={true}
-                    size="48"
+                    size= '48'
                     className="profile-pic"
                   />
-                  <div style={{ position: "relative", left: 60 }}>{review.name}</div>
+                  <div className='review-name' style={{ position: "relative", left: 60 }}>{review.name}</div>
                 </Card.Title>
                 <FaGoogle style={{ position: 'absolute', top: 10, right: 10 }} />
-                <Card.Subtitle style={{ position: "relative", left: 60, fontSize: 12 }} className="mb-3 text-muted">{review.date}</Card.Subtitle>
+                <Card.Subtitle style={{ position: "relative", left: 60, fontSize: 12 }} className="mb-3 text-muted review-date">{review.date}</Card.Subtitle>
                 <Card.Subtitle className="mb-2 text-muted">
                   {Array.from({ length: review.rating }, (_, index) => (
                     <FaStar key={index} className="star-icon" />
                   ))}
                 </Card.Subtitle>
                 <Card.Text className={`card-text-content ${expandedReviewIds.includes(review.id) ? 'expanded' : ''}`}>
-                  {review.text}
-                </Card.Text>
-                {review.text.length > 70 && (
+  {review.text}
+</Card.Text>
+
+                {review.text.length > 180 && (
                   <button className="read-more-button" onClick={() => toggleExpandReview(review.id)}>
                     {expandedReviewIds.includes(review.id) ? 'Read Less' : 'Read More'}
                   </button>
@@ -134,44 +146,47 @@ const ReviewPage = () => {
             </Card>
           </Col>
         ))}
-        {!isMobile && reviews.length > 1 && (
+        {/* {!isMobile && reviews.length > 1 && (
           <>
             <Col md={4} className="d-flex justify-content-start">
               {startIndex > 0 && (
-                <div className="arrow-icon" onClick={handlePrev}>
+                <div className="arrow-icon left-icon" onClick={handlePrev}>
                   <FaArrowLeft size={30} />
                 </div>
               )}
             </Col>
             <Col md={4} className="d-flex justify-content-end">
               {endIndex < reviews.length - 1 && (
-                <div className="arrow-icon" onClick={handleNext}>
-                  <FaArrowRight size={30} />
+                <div className="arrow-icon right-icon" onClick={handleNext}>
+                  <FaArrowRight  size={30} />
                 </div>
               )}
             </Col>
           </>
-        )}
+        )} */}
       </Row>
-      {isMobile && reviews.length > 1 && (
+      {/* {isMobile && reviews.length > 1 && (
         <Row className="arrow-row">
           <Col xs={6} className="d-flex justify-content-start">
             {startIndex > 0 && (
-              <div className="arrow-icon" onClick={handlePrev}>
+              <div className="arrow-icon left-icon" onClick={handlePrev}>
                 <FaArrowLeft />
               </div>
             )}
           </Col>
           <Col xs={6} className="d-flex justify-content-end">
             {endIndex < reviews.length - 1 && (
-              <div className="arrow-icon" onClick={handleNext}>
+              <div className="arrow-icon right-icon" onClick={handleNext}>
                 <FaArrowRight />
               </div>
             )}
           </Col>
         </Row>
-      )}
+      )} */}
+      
     </Container>
+
+    </div>
   );
 };
 

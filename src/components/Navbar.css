@@ -20,7 +20,7 @@
   align-items: flex-end;
 }
 .my-nav-dropdown {
-    color: white;
+    color: #ec5d24;
   }
   .dropdown>a::after {
     color: white;
@@ -28,9 +28,21 @@
 .navbar-toggler-icon {
   outline:none;
 }
+.dropdown-menu.show{
+  background-color: #ec5d24 !important;
+}
+.dropdown-item{
+  font-size: 18px;
+  font-weight: 900 !important;
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+}
+.dropdown-item:hover{
+  background: black !important;
+  color: #ec5d24 !important;
+}
   .ms-auto{
     /* font-family: 'Lora', serif !important; */
-    font-size: 28px;
+    font-size: 30px;
     font-weight:900;
     /* transition: color 0.3s ease-out !important; */
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -79,22 +91,22 @@
   }
   .logo{
     /* style={{ height: '250px', width: '250px', marginLeft:"0 !important", marginTop: -40, marginBottom: -40 }} */
-    height: 230px;
-    width: 230px;
+    height: 200px;
+    width: 200px;
     margin-left: 0 !important;
     margin-top: -50px;
-    margin-bottom: -55px;
+    margin-bottom: -60px;
    
   }
   @media(min-width:992px){
    .toDaRight{
     position: absolute;
-    right: 0;
+    right: 50px;
    }
    .logo{
     position: absolute;
     left: 0;
-    top:0;
+    top:15px;
    }
   }
   @media(max-width:444px){

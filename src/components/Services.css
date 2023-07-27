@@ -4,8 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
 
 /* .services {
     background: khaki;
@@ -75,10 +79,11 @@
   } */
   .service-description {
     margin-top: 1rem;
-    text-align: justify;
+    text-align:left;
     text-justify: inter-word;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
   .services-title {
@@ -86,12 +91,36 @@
     /* text-decoration: underline; */
     text-align: center;
     margin: 2rem 0;
-    font-size: 8vw;
+    font-size: 190px;
     padding-top: 30px !important;
     /* font-family: 'Russo One', sans-serif; */
     font-family: 'Electrolize', sans-serif;
     text-shadow: -2px -2px 0 #ec5d24, 2px -2px 0 #ec5d24, -2px 2px 0 #ec5d24, 2px 2px 0 #ec5d24;
 
+  }
+  .service-button {
+    
+    background-color: #ec5d24 !important;
+    color: black;
+    padding: 5px;
+    font-size: 36px !important;
+    font-weight: bolder !important;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+    z-index: 20;
+    border: none !important;
+    /* font-family: 'Voltaire', sans-serif; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 40px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  .services .service-button:hover {
+    background-color: black !important;
+    color: #ec5d24 !important;
+    border: none !important;
   }
   @media (max-width: 436px) {
     .services-title{
@@ -106,30 +135,55 @@
   
   .service-name {
     text-align: center;
-    font-size: 55px;
-    font-weight: 900 !important;
-    text-shadow: 0 0 2px #000, 0 0 0 #000, 0 0 2px #000;
-
+    font-size: 60px;
+    white-space: nowrap;
+    font-weight: bolder !important;
+    /* text-shadow: 0 0 2px #000, 0 0 0 #000, 0 0 2px #000; */
+    
     /* font-family: 'Plus Jakarta Sans', sans-serif; */
-    font-family: 'Electrolize', sans-serif;
-    /* text-shadow: -2px -2px 0 #ec5d24, 2px -2px 0 #ec5d24, -2px 2px 0 #ec5d24, 2px 2px 0 #ec5d24; */
+    /* font-family: 'Electrolize', sans-serif; */
+    font-family: 'Arvo', serif;
+    /* text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 #ec5d24; */
+    /* font-family: 'Stardos Stencil', cursive; */
 
+  }
+
+  @media(max-width:1399px){
+    .service-name{
+      font-size: 50px;
+    }
+    .service-description{
+      font-size: 22px;
+    }
+    .services-title{
+      font-size: 160px;
+    }
   }
   @media(max-width:1199px){
     .service-name{
-      font-size: 45px;
+      font-size: 42px;
     }
     .service-description{
-      font-size: 18px;
+      font-size: 19px;
+    }
+    .services-title{
+      font-size: 130px;
     }
   }
   @media(max-width:991px){
     .service-name{
-      font-size: 35px;
+      font-size: 30px;
     }
     .service-description{
-      font-size: 14.5px;
+      font-size: 13px;
     }
+    .services-title{
+      font-size: 100px;
+    }
+    .service-button{
+      font-size: 28px !important;
+    }
+
   }
   @media(max-width: 767px) {
     .services-title{
@@ -140,6 +194,9 @@
     }
     .service-description{
       font-size: 18px;
+    }
+    .service-button{
+      margin-bottom: 30px;
     }
   }
   @media(max-width:285px) {
@@ -157,29 +214,7 @@
   
   
  
-  .service-button {
-    
-    background-color: #ec5d24 !important;
-    color: black;
-    padding: 10px;
-    font-size: 26px !important;
-    font-weight: bolder !important;
-    line-height: 1.5;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    width: 100%;
-    z-index: 20;
-    border: none !important;
-    /* font-family: 'Voltaire', sans-serif; */
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    border-radius: 40px;
-    white-space: nowrap;
-  }
-  .services .service-button:hover {
-    background-color: black !important;
-    color: #ec5d24 !important;
-    border: none !important;
-  }
+  
   @media(max-width:500px){
     .service-button{
       font-size: 22px !important;
